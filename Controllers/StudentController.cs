@@ -44,7 +44,7 @@ namespace SinavSorusu21.Controllers
                 // Yüklenen dosyanın uzantısını alır (.jpg, .png vb.)
                 var uzanti=Path.GetExtension(Photo.FileName);
                 // Dosyaya benzersiz bir isim (GUID) verip uzantısını ekler
-                var yeniAd=Guid.NewGuid()+"."+uzanti;
+                var yeniAd=Guid.NewGuid()+uzanti;
                 // Dosyanın kaydedileceği tam fiziksel yolu oluşturur (wwwroot/images altı)
                 var yol=Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/images",yeniAd);
                 // Dosya tipinin sadece png veya jpg olup olmadığını kontrol eder
