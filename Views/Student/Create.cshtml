@@ -1,0 +1,45 @@
+
+@model SinavSorusu21.Models.Student
+@{
+    ViewData["Title"] = "Oluştur";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if(ViewBag.Hata!=null){
+    <p class="text-danger my-2">@ViewBag.Hata</p>
+}
+    <div asp-validation-summary="All"></div>
+    
+
+
+<form asp-controller="Student" asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" id="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+ <div class="mb-3">
+        <label asp-for="Surname" class="form-label"></label>
+        <input class="form-control" asp-for="Surname" id="Surname" />
+         <span asp-validation-for="Surname" class="text-danger"></span>
+    </div>
+ <div class="mb-3">
+        <label asp-for="Number" class="form-label"></label>
+        <input class="form-control" asp-for="Number" id="Number"/>
+         <span asp-validation-for="Number" class="text-danger"></span>
+    </div>
+     <div class="mb-3">
+        <label asp-for="_Class" class="form-label"></label>
+        <input class="form-control" asp-for="_Class" id="_Class"/>
+         <span asp-validation-for="_Class" class="text-danger"></span>
+    </div>
+     <div class="mb-3">
+        <label asp-for="Photo" class="form-label"></label>
+        <input type="file" class="form-control" name="Photo" id="Photo" />
+         <span asp-validation-for="Photo" class="text-danger"></span>
+    </div>
+     <div class="mb-3">
+        <input type="submit" class="btn btn-primary" value="Kaydet" />
+    </div>
+</form>

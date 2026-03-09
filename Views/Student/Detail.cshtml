@@ -1,0 +1,26 @@
+@model SinavSorusu21.Models.Student
+@{
+    ViewData["Title"] = "Detay";
+}
+
+<section class="section gray-bg mt-3">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="about-text go-to">
+                            <h3 class="dark-color">@Model.Name @Model.Surname</h3>
+                            <h6 class="theme-color lead"><strong>Numara : </strong>@Model.Number <strong>Sınıfı: </strong> @Model._Class</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="/images/@Model.Photo" class="img-fluid" title="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,32 @@
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+WORKDIR /app
+EXPOSE 8001
+# Install curl for health check
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:8001/health || exit 1
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+COPY ["SinavSorusu21.csproj", "./"]
+RUN dotnet restore "SinavSorusu21.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "SinavSorusu21.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "SinavSorusu21.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+# ----------------------------------------------------
+# EKLENECEK SATIRLAR:
+# /app/data klasörünü oluştur ve onu bir volume olarak işaretle
+RUN mkdir /app/data
+VOLUME /app/data
+# ----------------------------------------------------
+ENV ASPNETCORE_URLS=http://+:8001
+ENV TZ=Europe/Istanbul
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+ENTRYPOINT ["dotnet", "SinavSorusu21.dll"]
