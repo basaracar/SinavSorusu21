@@ -28,7 +28,7 @@ using (var scope = app.Services.CreateScope())
     context.Database.EnsureCreated(); // Veya context.Database.Migrate();
 }
 app.UseAuthorization();
-
+app.UseStaticFiles(); // wwwroot için
 app.MapStaticAssets();
 
 app.MapControllerRoute(
