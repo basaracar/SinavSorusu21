@@ -20,7 +20,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
+// app.Run()'dan hemen önce ekleyin
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AppDbContext>(); // Kendi DbContext adını yaz
+    context.Database.EnsureCreated(); // Veya context.Database.Migrate();
+}
 app.UseAuthorization();
 
 app.MapStaticAssets();
