@@ -1,13 +1,13 @@
 
 @model SinavSorusu21.Models.Student
 @{
-    ViewData["Title"] = "Oluştur";
+    ViewData["Title"] = "Ekle";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h3>@ViewData["Title"]</h3>
 
-@if(ViewBag.Hata!=null){
-    <p class="text-danger my-2">@ViewBag.Hata</p>
+@if(ViewBag.Error!=null){
+    <p class="text-danger my-2">@ViewBag.Error</p>
 }
     <div asp-validation-summary="All"></div>
     

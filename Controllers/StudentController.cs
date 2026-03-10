@@ -38,6 +38,14 @@ namespace SinavSorusu21.Controllers
         public IActionResult Create(Student student,IFormFile Photo)
         {
             if(ModelState.IsValid){
+            
+            var _student=_context.Students.FirstOrDefault(x=>x.Number.Equals(student.Number));
+                if (_student != null)
+                {
+                    ViewBag.Error="Bu öğrenci daha önce kayıt olmuş";
+                //    ModelState.AddModelError("Hata","Bu öğrenci daha önce kayıt olmuş");
+                    return View(student);
+                }
             // Eğer bir dosya seçilmişse (null değilse)
             if (Photo != null)
             {
