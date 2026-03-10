@@ -4,13 +4,13 @@
 | :--- | :--- | :--- | :--- |
 | **1. Model & DbContext** | Id, Name, Surname, Number, Class, Photo, [Required], [Display] | Modelde 'Class' alanı eksik, 'OkulNo' int tanımlanmış (String olmalıydı). DataAnnotationlar kısmen tamam. | 6/10 |
 | **2. DI & Bağlantı** | AppDbContext ve Program.cs ayarları | DbContext kaydı doğru yapılmış. | 10/10 |
-| **3. Listeleme (Index)** | Döngü, <img> gösterimi, Detay/Sil butonları | Controller'da 'Student' modelini değil, 'Tarif' View'ını çağırıyor. Route hataları var. | 5/15 |
+| **3. Listeleme (Index)** | Döngü, <img> gösterimi, Detay/Sil butonları | Controller'da 'Student' modelini değil, 'Tarif' View'ını çağırıyor. Route hataları var. | 6/15 |
 | **4. Kayıt & Foto Yükleme** | Guid kullanımı, images klasörü, uzantı kontrolü | Dosya yükleme mantığı doğru, Guid kullanılmış. | 12/15 |
 | **5. Mükerrer No Kontrolü** | Aynı numara ile kayıt engelleme | Kontrol kodu yazılmamış. | 0/15 |
 | **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | Detay sayfası hiç oluşturulmamış. | 0/10 |
 | **7. Silme & JS & Fiziksel** | confirm(), document.location, fiziksel dosya silme | Silme metodu (Delete) Controller'da hiç yok. JS fonksiyonları eksik. | 0/15 |
-| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | Controller içerisinde 'Tarif' ve 'Student' kavramları birbirine girmiş. Kod tekrarı mevcut. | 4/10 |
-| **TOPLAM** | | | **37/100** |
+| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | Controller içerisinde 'Tarif' ve 'Student' kavramları birbirine girmiş. Kod tekrarı mevcut. | 6/10 |
+| **TOPLAM** | | | **40/100** |
 
 ---
 

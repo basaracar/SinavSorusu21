@@ -20,5 +20,3 @@
 2. **Kritik İşlemler:** Bir veritabanı kaydını silerken o kayda ait dosyayı (fotografı) sunucudan kaldırmayı unutmamalısınız; aksi takdirde sunucunuz kısa sürede gereksiz dosyalarla dolacaktır. 
 3. **Mükerrer Kontrol:** `Create` metodunda veritabanına `Add` yapmadan önce mutlaka `_appDbContext.Students.Any(s => s.Numara == x.Numara)` kontrolünü ekleyin.
 4. **Dosya Yolları:** Klasör isimlerinde (`img` vs `images`) sınav yönergesine sadık kalın.
-
-Çalışmalarınızda başarılar dilerim, daha dikkatli bir yaklaşım ile bu hataları kolayca aşabilirsiniz.

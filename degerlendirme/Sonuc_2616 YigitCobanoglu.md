@@ -7,10 +7,10 @@
 | **3. Listeleme (Index)** | Döngü, <img> gösterimi, Detay/Sil butonları | Index sayfasında döngü ve görsel gösterimi var ancak Sil butonu `Delete` aksiyonuna yönlendirilmiş (JS onayı yok). | 10/15 |
 | **4. Kayıt & Foto Yükleme** | Guid kullanımı, images klasörü, uzantı kontrolü | Guid ile dosya adı oluşturma ve klasöre kaydetme başarılı. | 15/15 |
 | **5. Mükerrer No Kontrolü** | Aynı numara ile kayıt engelleme | **Hata:** Controller tarafında mükerrer kayıt kontrolü (Number alanı için) hiç yapılmamış. | 0/15 |
-| **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | **Hata:** Detay metodu `List<Student>` (Statik liste) bekliyor, DB'den gelen tekil veri gösterimi yok. | 2/10 |
+| **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | **Hata:** Detay metodu `List<Student>` (Statik liste) bekliyor, DB'den gelen tekil veri gösterimi yok. | 3/10 |
 | **7. Silme & JS & Fiziksel** | confirm(), document.location, fiziksel dosya silme | **Hata:** `Delete` aksiyonu ve fiziksel dosya silme işlemi kodda tamamen eksik. JS onayı yok. | 0/15 |
-| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | İsimlendirme temiz ancak gereksiz `public static List<Student>` tanımı ve yapısal eksikler var. | 5/10 |
-| **TOPLAM** | | | **52/100** |
+| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | İsimlendirme temiz ancak gereksiz `public static List<Student>` tanımı ve yapısal eksikler var. | 7/10 |
+| **TOPLAM** | | | **55/100** |
 
 ---
 

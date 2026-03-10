@@ -4,13 +4,13 @@
 | :--- | :--- | :--- | :--- |
 | **1. Model & DbContext** | Id, Name, Surname, Number, Class, Photo, [Required], [Display] | Modelde `Sinif` alanı `[Required]` eksik, `Number` alanı için `[Required]` var ancak `Display` eksik. | 7/10 |
 | **2. DI & Bağlantı** | AppDbContext ve Program.cs ayarları | DbContext ve bağlantı metni yapılandırılmış, sorunsuz. | 10/10 |
-| **3. Listeleme (Index)** | Döngü, <img> gösterimi, Detay/Sil butonları | Veri listeleme yapılmış ancak Sil/Detay butonları ve aksiyonları eksik. | 8/15 |
+| **3. Listeleme (Index)** | Döngü, <img> gösterimi, Detay/Sil butonları | Veri listeleme yapılmış ancak Sil/Detay butonları ve aksiyonları eksik. | 10/15 |
 | **4. Kayıt & Foto Yükleme** | Guid kullanımı, images klasörü, uzantı kontrolü | Guid ve klasör kullanımı doğru, ancak validation mantığı biraz karışık. | 12/15 |
 | **5. Mükerrer No Kontrolü** | Aynı numara ile kayıt engelleme | **Tamamen eksik.** Kontrol mekanizması kurulmamış. | 0/15 |
 | **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | **Tamamen eksik.** Detay sayfası oluşturulmamış. | 0/10 |
 | **7. Silme & JS & Fiziksel** | confirm(), document.location, fiziksel dosya silme | **Tamamen eksik.** Silme fonksiyonu, rotası ve dosya silme mantığı yok. | 0/15 |
 | **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | İsimlendirmeler genel olarak düzgün ancak kullanılmayan/gereksiz dosyalar (Razor Pages vs) mevcut. | 6/10 |
-| **TOPLAM** | | | **43/100** |
+| **TOPLAM** | | | **45/100** |
 
 ---
 
@@ -22,4 +22,3 @@
 4.  **Temizlik:** Proje içinde Razor Pages (.cshtml.cs) dosyaları ve kullanılmayan controllerlar (HakkındaController vb.) kod kirliliği yaratıyor. Standart bir MVC mimarisinde sadece ihtiyaç duyulan dosyaları tutmalısın.
 5.  **Dosya İşlemleri:** Fotoğraf yükleme mantığın genel olarak doğru (`Guid` kullanımı güzel), ancak `ViewBag.Hata` yerine `ModelState.AddModelError` kullanman daha profesyonel ve standart bir yaklaşımdır.
 
-**Sonuç:** Proje başlangıç aşamasında ancak teslim edilen dosyalarda fonksiyonel olarak (Silme ve Detay) eksiklikler çok fazla. Lütfen CRUD operasyonlarının tamamını kapsayacak şekilde geliştirmelerini yap. Başarılar dilerim.

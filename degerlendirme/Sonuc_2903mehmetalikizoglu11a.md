@@ -23,4 +23,3 @@
 4. **Detay Sayfası:** Detay sayfası için View oluşturulmuş ancak Controller tarafında id parametresi ile veritabanından nesne çeken (`Find` veya `FirstOrDefault`) bir mantık yazılmamış.
 5. **İsimlendirme:** Modeldeki property isimleri (`Ad`, `Soyad` vs.) kriterlerdeki (`Name`, `Surname`) isimlerle birebir eşleşmiyor.
 
-**Öneri:** Veritabanı ile çalışırken `static` değişken kullanmayı bırakıp tamamen `DbContext` üzerinden ilerlemelisiniz. `Delete` metoduna dosya yolunu belirleyip `File.Exists` ve `File.Delete` komutlarını eklemeyi öğrenmelisiniz. Mükerrer kontrolü için `ModelState.AddModelError` kullanarak `_appDbContext.Students.Any(s => s.Number == students.Number)` sorgusunu `Create` metoduna entegre etmelisiniz.

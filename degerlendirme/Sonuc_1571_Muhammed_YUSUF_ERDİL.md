@@ -9,8 +9,8 @@
 | **5. Mükerrer No Kontrolü** | Aynı numara ile kayıt engelleme | Kod içerisinde `Any()` veya `FirstOrDefault` ile numara kontrolü yapılmamış. | 0/15 |
 | **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | Detay sayfası hiç oluşturulmamış, sadece Edit ve Index mevcut. | 0/10 |
 | **7. Silme & JS & Fiziksel** | confirm(), document.location, fiziksel dosya silme | Silme işlemi kodda yok, route tanımlanmamış, JS fonksiyonu eksik. | 0/15 |
-| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | Projede "Tarif" ve "Yemek" ifadeleri karışmış, controller ismi yanlış (Student modeli controller içine yazılmış). | 3/10 |
-| **TOPLAM** | | | **33/100** |
+| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | Projede "Tarif" ve "Yemek" ifadeleri karışmış, controller ismi yanlış (Student modeli controller içine yazılmış). | 5/10 |
+| **TOPLAM** | | | **35/100** |
 
 ---
 

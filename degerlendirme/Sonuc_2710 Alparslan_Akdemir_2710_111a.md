@@ -9,8 +9,8 @@
 | **5. Mükerrer No Kontrolü** | Aynı numara ile kayıt engelleme | Kontrol mantığı tamamen eksik. | 0/15 |
 | **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | Detay sayfası hiç oluşturulmamış. | 0/10 |
 | **7. Silme & JS & Fiziksel** | confirm(), document.location, fiziksel dosya silme | Silme işlemi kodlanmamış, JS fonksiyonu yok. | 0/15 |
-| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | Controller isimlendirmeleri (StudentAppController) tutarsız. | 3/10 |
-| **TOPLAM** | | | **24/100** |
+| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData kullanımı | Controller isimlendirmeleri (StudentAppController) tutarsız. | 4/10 |
+| **TOPLAM** | | | **25/100** |
 
 ---
 

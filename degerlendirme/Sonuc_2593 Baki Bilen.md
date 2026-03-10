@@ -23,4 +23,3 @@
 5.  **Dosya Yolları:** `wwwroot` altındaki dosyaları `img/` olarak çağırmak yerine `@Url.Content("~/img/" + item.Foto)` yapısını kullanmanız daha güvenlidir.
 6.  **Hata Yönetimi:** Detay sayfasında `Students.FirstOrDefault` kullanılmış; ancak `Students` artık bir veritabanı tablosu değil, static bir liste. Bu yüzden detay sayfası boş dönecektir. `_appDbContext.Students.Find(id)` kullanmalısınız.
 
-*Çalışmalarınızda başarılar dilerim. Daha fazla pratik yapmanız gerektiğini düşünüyorum.*

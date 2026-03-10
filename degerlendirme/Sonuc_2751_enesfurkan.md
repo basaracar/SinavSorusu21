@@ -23,4 +23,3 @@
 5. **Route:** İstenen `[Route("/Student/Delete/{id}")]` attribute kullanımı ihmal edilmiş.
 6. **Dosya Yönetimi:** Proje içerisinde gereksiz yere oluşturulmuş `Razor Pages` (`.cshtml.cs` dosyaları) var. MVC yapısında sadece `Controller` ve `View` klasörlerine odaklanmalısınız.
 
-**Gelişim Önerisi:** ASP.NET Core MVC mimarisinde "Controller-View" arasındaki veri akışını ve Dependency Injection (DI) kullanımını tekrar gözden geçirmelisiniz. Ayrıca `System.IO` kütüphanesinin dosya sistemi üzerindeki yetkilerini incelemeniz faydalı olacaktır.

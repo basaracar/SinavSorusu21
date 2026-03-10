@@ -21,4 +21,4 @@
 3.  **Hatalı Yollar:** `wwwroot\img` klasörü ile `wwwroot/images` beklentisi örtüşmüyor. Dosya yollarındaki ters eğik çizgiler (`\`) Linux/Docker tabanlı ortamlarda hata verebilir, `Path.Combine` bu yüzden önemlidir.
 4.  **JS Hataları:** View tarafındaki JS fonksiyon ismi `ogrenciSil` olarak istenmişken, `studentSil` şeklinde tanımlanmış.
 
-**Öneri:** Öğrencinin C# isimlendirme standartlarını (PascalCase) tekrar gözden geçirmesi, "kopyala-yapıştır" yerine mantığı anlayarak kod yazması ve CRUD operasyonlarında veritabanı ile eşzamanlı dosya sistemi yönetimine odaklanması gerekmektedir.
+**Öneri:** "kopyala-yapıştır" yerine mantığı anlayarak kod yazması ve CRUD operasyonlarında veritabanı ile eşzamanlı dosya sistemi yönetimine odaklanması gerekmektedir.

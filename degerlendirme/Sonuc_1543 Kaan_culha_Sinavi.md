@@ -9,8 +9,8 @@
 | **5. Mükerrer No Kontrolü** | Aynı numara ile kayıt engelleme | Projede öğrenci numarası alanı yok, mükerrer kontrolü hiç yapılmamış. | 0/15 |
 | **6. Detay Sayfası** | Id ile veri bulma ve görüntüleme | Detay sayfası tasarlanmamış (sadece Edit var). | 0/10 |
 | **7. Silme & JS & Fiziksel** | confirm(), fiziksel dosya silme | `Delete` action'ında fiziksel dosya silme kodu yok. JS `confirm()` onayı eksik. | 3/15 |
-| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData | Controller içinde gereksiz dosya yapısı, Model adlandırma karmaşası mevcut. | 3/10 |
-| **TOPLAM** | | | **34/100** |
+| **8. Kod Düzeni & Kalite** | İsimlendirme, ViewBag/TempData | Controller içinde gereksiz dosya yapısı, Model adlandırma karmaşası mevcut. | 4/10 |
+| **TOPLAM** | | | **35/100** |
 
 ---
 

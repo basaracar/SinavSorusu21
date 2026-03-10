@@ -22,4 +22,3 @@
 4.  **Dosya Yolları:** `wwwroot\\img` yerine `Path.Combine(webHostEnvironment.WebRootPath, "img")` kullanmanız, uygulamanın farklı işletim sistemlerinde (Linux/Docker) sorunsuz çalışmasını sağlar.
 5.  **Validation:** `ModelState.IsValid` kullanılmış ancak `ViewBag.Hata` mantığı yerine `ModelState.AddModelError` kullanılması daha kurumsal bir yaklaşımdır.
 
-**Öneri:** `System.IO` kütüphanesini daha aktif kullanarak dosya sistemini kontrol etmeyi ve `IWebHostEnvironment` servisinden faydalanarak dosya yollarını dinamik yönetmeyi öğrenmelisin. Başarılar dilerim.
